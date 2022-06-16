@@ -44,12 +44,12 @@ class _BottomNavState extends State<BottomNav> {
             label: 'News',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.villa),
-            label: 'Paket',
+            icon: Icon(Icons.travel_explore),
+            label: 'Wisata',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.car_rental),
-            label: 'Rental',
+            icon: Icon(Icons.hotel),
+            label: 'Sewa',
           ),
         ],
         currentIndex: selectIndex,
