@@ -151,7 +151,7 @@ class SelectedPaketScreen extends StatelessWidget {
                                 const EdgeInsets.only(left: 28.8, right: 28.8),
                             child: FittedBox(
                               child: Text(
-                                'Explore Now >>',
+                                ' Pesan Sekarang',
                                 style: GoogleFonts.lato(
                                     fontWeight: FontWeight.w700,
                                     color: Colors.black),

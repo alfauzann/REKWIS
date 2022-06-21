@@ -3,8 +3,8 @@ import 'package:tubes_abp_flutter/models/rental_model.dart';
 import 'package:tubes_abp_flutter/widgets/constants.dart';
 
 class DetailPage extends StatefulWidget {
-  final int kendaraanId;
-  const DetailPage({Key? key, required this.kendaraanId}) : super(key: key);
+  final int hotelId;
+  const DetailPage({Key? key, required this.hotelId}) : super(key: key);
 
   @override
   State<DetailPage> createState() => _DetailPageState();
@@ -14,7 +14,7 @@ class _DetailPageState extends State<DetailPage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    List<Kendaraan> kendaraanList = Kendaraan.kendaraanList;
+    List<Hotel> hotelList = Hotel.hotelList;
 
     return Scaffold(
       body: Stack(
@@ -60,7 +60,7 @@ class _DetailPageState extends State<DetailPage> {
                       child: SizedBox(
                           height: 200,
                           child: Image.asset(
-                              kendaraanList[widget.kendaraanId].imageURL))),
+                              hotelList[widget.hotelId].imageURL))),
                   Positioned(
                     bottom: 10,
                     right: 0,
@@ -70,10 +70,10 @@ class _DetailPageState extends State<DetailPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          KendaraanFeature(
-                            title: 'Penumpang',
-                            kendaraanFeature:
-                                kendaraanList[widget.kendaraanId].penumpang,
+                          HotelFeature(
+                            title: 'Bintang',
+                            hotelFeature:
+                                hotelList[widget.hotelId].bintang,
                           ),
                         ],
                       ),
@@ -108,7 +108,7 @@ class _DetailPageState extends State<DetailPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            kendaraanList[widget.kendaraanId].nama,
+                            hotelList[widget.hotelId].nama,
                             style: const TextStyle(
                               color: Colors.black87,
                               fontSize: 30.0,
@@ -119,7 +119,7 @@ class _DetailPageState extends State<DetailPage> {
                             height: 10,
                           ),
                           Text(
-                            kendaraanList[widget.kendaraanId].harga.toString(),
+                            hotelList[widget.hotelId].harga.toString(),
                             style: TextStyle(
                               color: Constants.blackColor,
                               fontSize: 24.0,
@@ -135,7 +135,7 @@ class _DetailPageState extends State<DetailPage> {
                   ),
                   Expanded(
                     child: Text(
-                      kendaraanList[widget.kendaraanId].decription,
+                      hotelList[widget.hotelId].decription,
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                           height: 1.5,
@@ -189,14 +189,14 @@ class _DetailPageState extends State<DetailPage> {
 }
 
 // ignore: camel_case_types
-class KendaraanFeature extends StatelessWidget {
-  const KendaraanFeature({
+class HotelFeature extends StatelessWidget {
+  const HotelFeature({
     Key? key,
     required this.title,
-    required this.kendaraanFeature,
+    required this.hotelFeature,
   }) : super(key: key);
 
-  final String kendaraanFeature;
+  final String hotelFeature;
   final String title;
 
   @override
@@ -211,7 +211,7 @@ class KendaraanFeature extends StatelessWidget {
           ),
         ),
         Text(
-          kendaraanFeature,
+          hotelFeature,
           style: TextStyle(
             color: Constants.primaryColor,
             fontSize: 18.0,
