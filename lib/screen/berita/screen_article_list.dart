@@ -50,9 +50,7 @@ class _ScreenArticleListState extends State<ScreenArticleList> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            Text('News'),
-            Text(' '),
-            Text('RekWis', style: TextStyle(color: Colors.blue))
+            Text('RekWis', style: TextStyle(color: Colors.green))
           ],
         ),
         elevation: 1.0,

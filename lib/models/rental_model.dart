@@ -18,21 +18,34 @@ class Hotel {
   static List<Hotel> hotelList = [
     Hotel(
         id: 0,
-        harga: 'Rp 1.800.000/malam',
-        nama: 'Grand Aston',
-        bintang: '5',
-        imageURL: 'assets/images/jazz.webp',
+        harga: 'Rp 860.000/malam',
+        nama: 'The Papandayan',
+        bintang: '4.6',
+        imageURL: 'assets/images/papandayan.jpg',
         decription:
-        'Hotel bintang 5 ditengah kota bandung'),
+        'Address: Jl. Gatot Subroto No.83, Malabar, Kec. Lengkong, Kota Bandung, Jawa Barat 40262'
+            ' ; '
+            'Phone: (022) 7310799'),
     Hotel(
         id: 1,
-        harga: 'Rp 2.000.000/malam',
-        nama: 'Mercure',
-        bintang: '5',
+        harga: 'Rp 704.000/malam',
+        nama: 'Mercure City Centre',
+        bintang: '4.5',
         imageURL: 'assets/images/mercure.jpg',
         decription:
-        'Hotel bintang 5 di pinggir kota Bandung'),
-
+        'Address: Jl. Lengkong Besar No.8, Cikawao, Kec. Lengkong, Kota Bandung, Jawa Barat 40261'
+            ' ; '
+            'Phone: (022) 30008000'),
+    Hotel(
+        id: 2,
+        harga: 'Rp 900.000/malam',
+        nama: 'Swiss-Belresort Dago',
+        bintang: '4.6',
+        imageURL: 'assets/images/swissbell.jpg',
+        decription:
+        'Address: Jl. Lapangan Golf Dago Atas No.78, Cigadung, Kec. Cibeunying Kaler, Kota Bandung, Jawa Barat 40135'
+            ' ; '
+            'Phone: (022) 20459999'),
   ];
 
 

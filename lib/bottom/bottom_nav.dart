@@ -18,9 +18,9 @@ class _BottomNavState extends State<BottomNav> {
     // const Text('home'),
     // const Text('news'),
     const HomeScreen(),
-    const ScreenArticleList(),
     const PaketScreen(),
     const RentScreen(),
+    const ScreenArticleList(),
   ];
 
   void _onItemTapped(int index) {
@@ -40,10 +40,6 @@ class _BottomNavState extends State<BottomNav> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.newspaper),
-            label: 'News',
-          ),
-          BottomNavigationBarItem(
             icon: Icon(Icons.travel_explore),
             label: 'Wisata',
           ),
@@ -51,6 +47,10 @@ class _BottomNavState extends State<BottomNav> {
             icon: Icon(Icons.hotel),
             label: 'Sewa',
           ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.newspaper),
+          label: 'News',
+        ),
         ],
         currentIndex: selectIndex,
         selectedItemColor: Colors.red,

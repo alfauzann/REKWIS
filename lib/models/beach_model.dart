@@ -10,30 +10,30 @@ List<BeachModel> beaches =
 var beachesData = [
   {
     "image":
-        "https://images.unsplash.com/photo-1501950183564-3c8ac97d08f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+        "https://www.hargatiket.net/wp-content/uploads/2019/02/Tempat-Wisata-di-Bandung.jpg"
   },
   {
     "image":
-        "https://images.unsplash.com/photo-1546484475-7f7bd55792da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+        "https://res.klook.com/image/upload/v1604337712/blog/olhof1p22lol7ekasxg3.jpg"
   },
   {
     "image":
-        "https://images.unsplash.com/photo-1539609413529-1166774c3954?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+        "https://cdn-2.tstatic.net/travel/foto/bank/images/the-great-asia-africa-satu-tempat-wisata-terbaik-di-lembang-bandung.jpg"
   },
   {
     "image":
-        "https://images.unsplash.com/photo-1573790387438-4da905039392?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80"
+        "https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2021/11/glamping-feature-525x300.jpg"
   },
   {
     "image":
-        "https://images.unsplash.com/photo-1508317824427-18d2323490fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80"
+        "https://assets.promediateknologi.com/crop/0x0:0x0/x/photo/ayobandung/bank_image/medium/sambut-hut-ke-3-ayo-berburu-tiket-promo-di-orchid-forest-cikole.jpg"
   },
   {
     "image":
-        "https://images.unsplash.com/photo-1591152348786-b37131d37840?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWk784pg6EYEyocyEcyklpTvArn1Y8k20IpQ&usqp=CAU",
   },
   {
     "image":
-        "https://images.unsplash.com/photo-1540690448301-9f7ead5263ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwoWkR-G_qA6BG89XMB8WdwetaaXAveH-OFQ&usqp=CAU"
   },
 ];

@@ -24,7 +24,7 @@ class SelectedPaketScreen extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             children: List.generate(
               recommendedModel.images.length,
-              (int index) => Container(
+                  (int index) => Container(
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     fit: BoxFit.cover,
@@ -73,7 +73,7 @@ class SelectedPaketScreen extends StatelessWidget {
                   minHeight: MediaQuery.of(context).size.height * 0.4,
                   maxHeight: MediaQuery.of(context).size.height * 0.5),
               padding:
-                  const EdgeInsets.only(left: 28.8, bottom: 48, right: 28.8),
+              const EdgeInsets.only(left: 28.8, bottom: 48, right: 28.8),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -123,7 +123,7 @@ class SelectedPaketScreen extends StatelessWidget {
                         children: <Widget>[
                           FittedBox(
                             child: Text(
-                              'Start from',
+                              'Mulai dari',
                               style: GoogleFonts.lato(
                                   fontWeight: FontWeight.w500,
                                   color: Colors.white),
@@ -131,7 +131,7 @@ class SelectedPaketScreen extends StatelessWidget {
                           ),
                           FittedBox(
                             child: Text(
-                              '\$ ${recommendedModel.price.toString()} / person',
+                              '\$ ${recommendedModel.price.toString()} / orang',
                               style: GoogleFonts.lato(
                                   fontWeight: FontWeight.w700,
                                   color: Colors.white),
@@ -148,10 +148,10 @@ class SelectedPaketScreen extends StatelessWidget {
                           alignment: Alignment.center,
                           child: Container(
                             padding:
-                                const EdgeInsets.only(left: 28.8, right: 28.8),
+                            const EdgeInsets.only(left: 28.8, right: 28.8),
                             child: FittedBox(
                               child: Text(
-                                ' Pesan Sekarang',
+                                'Beli Tiket',
                                 style: GoogleFonts.lato(
                                     fontWeight: FontWeight.w700,
                                     color: Colors.black),

@@ -22,74 +22,92 @@ List<RecommendedModel> recommendations = recommendationsData
 
 var recommendationsData = [
   {
+    "name": "Tangkuban Perahu",
+    "tagLine": "Tangkuban Perahu adalah sebuah stratovolcano 30 km sebelah utara kota Bandung",
+    "image":
+    "https://images.unsplash.com/photo-1622866350324-d582d9487d1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1520837856995-1e14f1cc1ee1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "https://images.unsplash.com/photo-1620831568226-8735f4e4e8b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+
+    ],
+    "description":
+    "Jl. Tangkuban Parahu No. 282, Cikole Lembang, Kab. Bandung Barat 40391 ",
+    "price": 4
+  },
+  {
     "name": "Kebun Binatang Bandung",
-    "tagLine": "Bandung Variety of ",
+    "tagLine": "Berbagai macam binatang berada disini ",
     "image":
-        // "https://images.unsplash.com/photo-1607355739828-0bf365440db5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1444&q=80",
-        "https://asset.kompas.com/crops/8PDLGKBa-491pbsajlYSZPGfC1c=/0x0:0x0/750x500/data/photo/2020/03/02/5e5cea25b2ce2.jpg",
-    "images": [
-      "https://cdn-2.tstatic.net/tribunnews/foto/images/preview/hari-raya-nyepi-pengunjung-bandung-zoological-garden-melonjak_20210315_065936.jpg",
-      "https://cdns.klimg.com/newshub.id/news/2018/06/14/159326/750x500-jelang-lebaran-bandung-zoo-terus-berbenah-untuk-sambut-ratusan-ribu-pengunjung-180614y.jpg",
-      "https://geotourism.guide/wp-content/uploads/2021/09/Bandung-zoo-400x400.jpg",
-      "https://i.pinimg.com/736x/21/d4/45/21d445713eb3d6a771a90a0221b1a492.jpg"
+    "https://akcdn.detik.net.id/visual/2021/07/02/kebun-binatang-bandung_169.jpeg?w=650",
 
-      // "https://images.unsplash.com/photo-1607355739828-0bf365440db5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1444&q=80",
-      // "https://images.unsplash.com/photo-1577791465485-b80039b4d69a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80",
-      // "https://images.unsplash.com/photo-1577404699057-04440b45986f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80",
-      // "https://images.unsplash.com/photo-1549973890-38d08b229439?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=642&q=80",
-      // "https://images.unsplash.com/photo-1622263096760-5c79f72884af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-    ],
+    "images": [
+      "https://asset.kompas.com/crops/8PDLGKBa-491pbsajlYSZPGfC1c=/0x0:0x0/750x500/data/photo/2020/03/02/5e5cea25b2ce2.jpg",
+      "https://jabarekspres.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-14-at-16.33.43.jpeg",
+      "https://tempatwisatadibandung.info/wp-content/uploads/2018/04/Tiket-Masuk-Kebun-Binatang-Bandung.jpg",
+
+     ],
     "description":
-        "Obyek wisata Lembang Park Zoo di Parongpong Kabupaten Bandung Barat KBB menawarkan sensasi berbeda makan bersama binatang buas Harimau",
-    "price": 100
+        "Jl. Tamansari No.17, Lb. Siliwangi, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132",
+    "price": 4
   },
   {
-    "name": "Raja Ampat, Indonesia",
-    "tagLine": "Raja Ampat The Hidden Place",
+    "name": "Dusun Bambu",
+    "tagLine": "Berwisata ke Dusun Bambu",
     "image":
-        "https://images.pexels.com/photos/2583852/pexels-photo-2583852.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+        "https://images.unsplash.com/photo-1546882150-405ed2333d37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
     "images": [
-      "https://images.pexels.com/photos/2583852/pexels-photo-2583852.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-      "https://images.unsplash.com/photo-1570789210967-2cac24afeb00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-      "https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-      "https://live.staticflickr.com/1449/23852180634_54f8aa0404_b.jpg",
-      "https://cdn.pixabay.com/photo/2017/08/09/12/05/piaynemo-2614341_960_720.jpg"
+      "https://images.unsplash.com/photo-1627430767309-99619e740ada?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+
+
     ],
     "description":
-        "Raja Ampat is one of the favorite tourist destination, you can feel cultural tourism and history to explore exotic beaches in Raja Ampat",
-    "price": 130
+        "jl. Kolonel Masturi KM. 11, Dusun Bambu Lembang, Kertawangi, Kec. Cisarua, Kabupaten Bandung Barat, Jawa Barat, Indonesia, 40551",
+    "price": 2
   },
   {
-    "name": "Bali, Indonesia",
-    "tagLine": "Bali The Beautiful Heaven",
+    "name": "Kawah Putih",
+    "tagLine": "Tempat wisata di kawah gunung berapi ",
     "image":
-        "https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80",
+        "https://images.unsplash.com/photo-1655178353439-0f754eaa0a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     "images": [
-      "https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80",
       "https://images.unsplash.com/photo-1542897644-e04428948020?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80",
-      "https://images.unsplash.com/photo-1546845776-dcdf70fd09e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "https://images.unsplash.com/photo-1517480448885-d5c53555ba8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1034&q=80",
-      "https://images.unsplash.com/photo-1524675053444-52c3ca294ad2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "https://images.unsplash.com/photo-1617148302839-ee02d38676ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8a2F3YWglMjBwdXRpaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60",
+      "https://images.unsplash.com/photo-1518458628499-27acd7f2c893?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+      "https://images.unsplash.com/photo-1646109900203-50b80ee648a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     ],
     "description":
-        "Bali, the famed Island of the Gods, with its varied landscape of hills and mountains, rugged coastlines and sandy beaches, lush rice terraces and barren volcanic hillsides all providing a picturesque backdrop to its colourful, deeply spiritual and unique culture, stakes a serious claim to be paradise on earth.",
-    "price": 120
+        "Jl. Raya Soreang Ciwidey, Ciwidey, Bandung, Jawa Barat 40973.",
+    "price": 6
   },
   {
-    "name": "Yogyakarta, Indonesia",
-    "tagLine": "Yogyakarta Istimewa",
+    "name": "Farmhouse Lembang",
+    "tagLine": "Tempat yang tepat untuk dijadikan spot foto",
     "image":
-        "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
+        "https://cdn.nativeindonesia.com/foto/farmhouse-lembang-bandung/farm-house-lembang-Bandung.jpg",
     "images": [
-      "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
-      "https://images.unsplash.com/photo-1551018612-9715965c6742?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1354&q=80",
-      "https://images.unsplash.com/photo-1561100344-0cce8621ca6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "https://images.unsplash.com/photo-1529680218503-29abd728bef5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=679&q=80",
-      "https://images.unsplash.com/photo-1566559532512-004a6df74db5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
+      "https://img.okezone.com/content/2020/12/16/408/2328866/sensasi-liburan-ala-eropa-di-farmhouse-lembang-ini-spot-spot-unik-bisa-dinikmati-RMRPqq171Z.jpg",
+      "https://wisatakaka.com/wp-content/uploads/2017/12/25005850_191571078060013_1680802448760897536_n-1.jpg",
+      "https://www.urbandung.com/wp-content/uploads/2015/12/farmhouse-lembang-bandung.jpg",
+      "https://cakrawalatour.com/wp-content/uploads/2019/12/rumah-hobbit-farm-house-bandung-1-1.jpg",
+
     ],
     "description":
-        "Yogyakarta is a bustling town of some half a million people and the most popular tourist destination on Java, largely thanks to its proximity to the temples of Borobudur and Prambanan.",
-    "price": 110
+        "Jl. Raya Lembang No.108, Gudangkahuripan, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391",
+    "price": 3
   },
-
+  {
+    "name": "Tebing Keraton",
+    "tagLine": "Tempat dengan pemandangan yang indah diatas gunung",
+    "image":
+    "https://i0.wp.com/kelloggsnyc.com/wp-content/uploads/2019/09/tebing-keraton.jpg",
+    "images": [
+      "https://wisatalengkap.com/wp-content/uploads/2019/10/viskrenus_52514248_394572137996196_5824345978799007812_n-1024x768.jpg",
+      "https://www.king-adventure.com/wp-content/uploads/2020/03/Tebing-Keraton-Bandung.jpg",
+      "https://www.wisataidn.com/wp-content/uploads/2020/07/Tebing-Keraton-Bandung-750x450.jpg",
+    ],
+    "description":
+    "Puncak Kordon, RT.2/RW.10, Ciburial, Kec. Cimenyan, Bandung Barat, Jawa Barat 40198 ",
+    "price": 1
+  },
 ];

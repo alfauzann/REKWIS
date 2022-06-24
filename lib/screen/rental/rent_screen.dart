@@ -29,7 +29,7 @@ class _RentScreenState extends State<RentScreen> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            Text('GoWis', style: TextStyle(color: Colors.blue))
+            Text('RekWis', style: TextStyle(color: Colors.green))
           ],
         ),
         elevation: 1.0,
@@ -195,7 +195,7 @@ class _RentScreenState extends State<RentScreen> {
                         color: Constants.primaryColor.withOpacity(.1),
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      height: 80,
+                      height: 100,
                       padding: const EdgeInsets.only(left: 10, top: 10),
                       margin: const EdgeInsets.only(bottom: 10, top: 10),
                       width: size.width,
@@ -208,8 +208,8 @@ class _RentScreenState extends State<RentScreen> {
                             clipBehavior: Clip.none,
                             children: [
                               Container(
-                                width: 60.0,
-                                height: 60.0,
+                                width: 50.0,
+                                height: 50.0,
                                 decoration: BoxDecoration(
                                   color: Constants.primaryColor.withOpacity(.8),
                                   shape: BoxShape.rectangle,
@@ -226,8 +226,8 @@ class _RentScreenState extends State<RentScreen> {
                                 ),
                               ),
                               Positioned(
-                                bottom: 10,
-                                left: 80,
+                                bottom: 30,
+                                left: 65,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -235,7 +235,7 @@ class _RentScreenState extends State<RentScreen> {
                                       hotelList[index].nama,
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
-                                          fontSize: 18,
+                                          fontSize: 20,
                                           color: Constants.blackColor),
                                     ),
                                   ],
@@ -244,12 +244,12 @@ class _RentScreenState extends State<RentScreen> {
                             ],
                           ),
                           Container(
-                            padding: const EdgeInsets.only(right: 10),
+                            padding: const EdgeInsets.only(right: 5),
                             child: Text(
                               hotelList[index].harga.toString(),
                               style: const TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 18,
+                                  fontSize: 15,
                                   color: Colors.black87),
                             ),
                           ),

@@ -5,6 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:tubes_abp_flutter/models/beach_model.dart';
+import 'package:tubes_abp_flutter/models/event.dart';
 import 'package:tubes_abp_flutter/models/popular_model.dart';
 import 'package:tubes_abp_flutter/screen/home/selected_place_screen.dart';
 // import 'package:tubes_abp_flutter/widgets/bottom_navigation_bar.dart';
@@ -35,46 +36,50 @@ class _HomeScreenState extends State<HomeScreen> {
             height: 57.6,
             margin: const EdgeInsets.only(top: 28.8, left: 28.8, right: 28.8),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
-                Container(
-                  height: 57.6,
-                  width: 57.6,
-                  padding: const EdgeInsets.all(18),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(9.6),
-                    color: const Color(0x080a0928),
+               Padding(
+                 padding: EdgeInsets.symmetric(vertical: 1, horizontal: 80),
+                  child: Text(
+                    'RekWis',
+                    style: GoogleFonts.playfairDisplay(
+                        fontSize: 50, fontWeight: FontWeight.w500),
+
                   ),
-                  child: SvgPicture.asset('assets/svg/icon_drawer.svg'),
                 ),
-                Container(
-                  height: 57.6,
-                  width: 57.6,
-                  padding: const EdgeInsets.all(18),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(9.6),
-                    color: const Color(0x080a0928),
-                  ),
-                  child: SvgPicture.asset('assets/svg/icon_search.svg'),
-                )
+
+
+
               ],
+            ),
+          ),
+          Container(
+            width: 200,
+            height: 200,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8.0),
+              image: DecorationImage(
+                image: AssetImage('assets/images/awal.jpeg'),
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           // title text
           Padding(
             padding: const EdgeInsets.only(top: 48, left: 28.8),
             child: Text(
-              'Explore\nthe Nature with us',
+              'Eksplorasi dan kunjungi Wisata Kota Bandung',
               style: GoogleFonts.playfairDisplay(
-                  fontSize: 40.6, fontWeight: FontWeight.w500),
+                  fontSize: 30, fontWeight: FontWeight.w500),
             ),
           ),
+
           // tab bar
           Container(
             height: 30,
             margin: const EdgeInsets.only(left: 14.4, top: 28.8),
             child: DefaultTabController(
-              length: 4,
+              length: 1,
               child: TabBar(
                   labelPadding: const EdgeInsets.only(left: 14.4, right: 14.4),
                   indicatorPadding:
@@ -92,21 +97,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     Tab(
                       child: Text('Recomended'),
                     ),
-                    Tab(
-                      child: Text('Populer'),
-                    ),
-                    Tab(
-                      child: Text('New Destination'),
-                    ),
-                    Tab(
-                      child: Text('Hidden Gems'),
-                    ),
+
+
                   ]),
             ),
           ),
-
-          // isi tabbar rekomendasi
-
           Container(
             height: 218.4,
             margin: const EdgeInsets.only(top: 16),
@@ -165,6 +160,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           ],
                                         ),
                                       ),
+
                                     ),
                                   ))
                             ],
@@ -173,8 +169,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       )),
             ),
           ),
-          // dots indikator
-
           Padding(
             padding: const EdgeInsets.only(left: 28.8, top: 28.8),
             child: SmoothPageIndicator(
@@ -188,6 +182,61 @@ class _HomeScreenState extends State<HomeScreen> {
                   spacing: 4.8),
             ),
           ),
+          Container(
+            height: 30,
+            margin: const EdgeInsets.only(left: 14.4, top: 28.8),
+            child: DefaultTabController(
+              length: 1,
+              child: TabBar(
+                  labelPadding: const EdgeInsets.only(left: 14.4, right: 14.4),
+                  indicatorPadding:
+                  const EdgeInsets.only(left: 14.4, right: 14.4),
+                  isScrollable: true,
+                  labelColor: const Color(0xFF000000),
+                  unselectedLabelColor: const Color(0xFF8a8a8a),
+                  labelStyle: GoogleFonts.lato(
+                      fontSize: 14, fontWeight: FontWeight.w700),
+                  unselectedLabelStyle: GoogleFonts.lato(
+                      fontSize: 14, fontWeight: FontWeight.w700),
+                  indicator: RoundedRectangleTabIndicator(
+                      color: const Color(0xFF000000), weight: 2.4, width: 14.4),
+                  tabs: const [
+                    Tab(
+                      child: Text('Event'),
+                    ),
+
+
+                  ]),
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.only(top: 28.8, bottom: 16.8),
+            height: 124.8,
+            child: ListView.builder(
+              itemCount: event.length,
+              padding: const EdgeInsets.only(left: 28.8, right: 12),
+              scrollDirection: Axis.horizontal,
+              physics: const BouncingScrollPhysics(),
+              itemBuilder: (context, index) {
+                return Container(
+                  height: 124.8,
+                  width: 188.4,
+                  margin: const EdgeInsets.only(right: 16.8),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(9.6),
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: NetworkImage(event[index].image),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+
+          // dots indikator
+
+
 
           // Text widget populer kategori
 

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tubes_abp_flutter/models/rental_model.dart';
 import 'package:tubes_abp_flutter/widgets/constants.dart';
-
 class DetailPage extends StatefulWidget {
   final int hotelId;
   const DetailPage({Key? key, required this.hotelId}) : super(key: key);
@@ -68,10 +67,10 @@ class _DetailPageState extends State<DetailPage> {
                       height: 150,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           HotelFeature(
-                            title: 'Bintang',
+                            title: 'Bintang : ',
                             hotelFeature:
                                 hotelList[widget.hotelId].bintang,
                           ),

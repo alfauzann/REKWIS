@@ -123,7 +123,7 @@ class SelectedPlaceScreen extends StatelessWidget {
                         children: <Widget>[
                           FittedBox(
                             child: Text(
-                              'Start from',
+                              'Mulai Dari',
                               style: GoogleFonts.lato(
                                   fontWeight: FontWeight.w500,
                                   color: Colors.white),
@@ -131,7 +131,7 @@ class SelectedPlaceScreen extends StatelessWidget {
                           ),
                           FittedBox(
                             child: Text(
-                              '\$ ${recommendedModel.price.toString()} / person',
+                              '\$ ${recommendedModel.price.toString()} / Orang',
                               style: GoogleFonts.lato(
                                   fontWeight: FontWeight.w700,
                                   color: Colors.white),
@@ -151,7 +151,7 @@ class SelectedPlaceScreen extends StatelessWidget {
                                 const EdgeInsets.only(left: 28.8, right: 28.8),
                             child: FittedBox(
                               child: Text(
-                                'Explore Now >>',
+                                'Beli Tiket',
                                 style: GoogleFonts.lato(
                                     fontWeight: FontWeight.w700,
                                     color: Colors.black),

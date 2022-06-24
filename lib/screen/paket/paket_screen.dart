@@ -26,11 +26,11 @@ class _PaketScreenState extends State<PaketScreen> {
             physics: const BouncingScrollPhysics(),
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(top: 40, left: 20.8, bottom: 17.3),
+                padding: const EdgeInsets.only(top: 40, left: 140, bottom: 15),
                 child: Text(
-                  'REKWIS',
+                  'RekWis',
                   style: GoogleFonts.playfairDisplay(
-                      fontSize: 35.6, fontWeight: FontWeight.w500),
+                      fontSize: 36.0, fontWeight: FontWeight.w500),
 
                 ),
               ),

@@ -50,7 +50,7 @@ class ScreenArticleDetails extends StatelessWidget {
         image: DecorationImage(
             fit: BoxFit.cover,
             image:
-                NetworkImage(article.urlToImage ?? ImageURLS.DEFAULT_IMG_URL)),
+            NetworkImage(article.urlToImage ?? ImageURLS.DEFAULT_IMG_URL)),
       ),
     );
   }

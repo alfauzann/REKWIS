@@ -24,7 +24,7 @@ class WelcomeScreen extends StatelessWidget {
                       fontFamily: "Roboto",
                       color: Color.fromARGB(248, 180, 228, 8))),
               const Text(
-                "Welcome to RekWis with us...",
+                "Eksplor Kota Bandung Bersama Kita",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 14,
