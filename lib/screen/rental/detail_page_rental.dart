@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:tubes_abp_flutter/models/rental_model.dart';
 import 'package:tubes_abp_flutter/widgets/constants.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+
 class DetailPage extends StatefulWidget {
   final int hotelId;
   const DetailPage({Key? key, required this.hotelId}) : super(key: key);
@@ -12,7 +15,9 @@ class DetailPage extends StatefulWidget {
 class _DetailPageState extends State<DetailPage> {
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    Size size = MediaQuery
+        .of(context)
+        .size;
     List<Hotel> hotelList = Hotel.hotelList;
 
     return Scaffold(
@@ -72,7 +77,7 @@ class _DetailPageState extends State<DetailPage> {
                           HotelFeature(
                             title: 'Bintang : ',
                             hotelFeature:
-                                hotelList[widget.hotelId].bintang,
+                            hotelList[widget.hotelId].bintang,
                           ),
                         ],
                       ),
@@ -152,41 +157,39 @@ class _DetailPageState extends State<DetailPage> {
         width: size.width * .4,
         height: 50,
         child: Row(
-          children: [
-            const SizedBox(
-              width: 20,
-            ),
-            Expanded(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+
+          InkWell(
+
+              onTap: () => launch('https://traveloka.com'),
               child: Container(
+                height: 50,
+                width: 150,
+                padding: const EdgeInsets.all(1),
                 decoration: BoxDecoration(
-                  color: Constants.primaryColor,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      offset: const Offset(0, 1),
-                      blurRadius: 5,
-                      color: Constants.primaryColor.withOpacity(0.3),
-                    ),
-                  ],
+                  borderRadius: BorderRadius.circular(200),
+                  color: const Color(0xFF736E6E),
                 ),
                 child: const Center(
                   child: Text(
-                    'RENT',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20.0,
-                    ),
+                    'Pesan Kamar',
+                        style: TextStyle(
+                      color: Colors.lightBlue,
+                          fontSize: 20,
+                  )
                   ),
                 ),
+                ),
+
               ),
-            ),
+
           ],
         ),
       ),
     );
   }
 }
-
 // ignore: camel_case_types
 class HotelFeature extends StatelessWidget {
   const HotelFeature({

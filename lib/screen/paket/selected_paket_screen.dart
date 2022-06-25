@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:tubes_abp_flutter/models/recommended_model.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SelectedPaketScreen extends StatelessWidget {
   final _pageController = PageController();
@@ -139,27 +140,33 @@ class SelectedPaketScreen extends StatelessWidget {
                           )
                         ],
                       ),
-                      Container(
-                        height: 62.4,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(9.6),
-                            color: Colors.white),
-                        child: Align(
-                          alignment: Alignment.center,
-                          child: Container(
-                            padding:
-                            const EdgeInsets.only(left: 28.8, right: 28.8),
-                            child: FittedBox(
-                              child: Text(
-                                'Beli Tiket',
-                                style: GoogleFonts.lato(
-                                    fontWeight: FontWeight.w700,
-                                    color: Colors.black),
-                              ),
-                            ),
-                          ),
+                  Container(
+                  height: 57.6,
+                  margin: const EdgeInsets.only(top: 28.8, left: 28.8, right: 28.8),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                    InkWell(
+                      onTap: () => launch('https://wa.me/+62812340428?text=Saya ingin pesan tiket!'),
+                    child: Container(
+                      height: 50,
+                      width: 50,
+                      padding: const EdgeInsets.all(1),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(91.6),
+                        color: const Color(0xFFFFFFFF),
+                  ),
+                        child: const Icon(
+                          Icons.whatsapp,
+                          size: 50.0,
+                          color: Colors.green,
                         ),
-                      )
+
+                    ),
+                  ),
+    ],
+    ),
+    ),
                     ],
                   )
                 ],

@@ -247,19 +247,14 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  'Populer Categories',
+                  'Wisata Terpopuler',
                   style: GoogleFonts.playfairDisplay(
                       fontSize: 28,
                       fontWeight: FontWeight.w700,
                       color: const Color(0xFF000000)),
                 ),
-                Text(
-                  'Show All',
-                  style: GoogleFonts.playfairDisplay(
-                      fontSize: 16.8,
-                      fontWeight: FontWeight.w500,
-                      color: const Color(0xFF8a8a8a)),
-                ),
+
+
               ],
             ),
           ),

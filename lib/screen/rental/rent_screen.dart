@@ -21,7 +21,7 @@ class _RentScreenState extends State<RentScreen> {
     List<Hotel> hotelList = Hotel.hotelList;
 
     List<String> hotelTypes = [
-      'Recommended',
+      'Rekomendasi Hotel',
     ];
 
     return Scaffold(
